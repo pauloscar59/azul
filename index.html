@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+
+  <title>Land Art</title>
+  <meta name="description" content="HTML tutorial">
+  <meta name="keywords"
+  content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Paulo Óscar">
+  <meta http-equiv="refresh" content="30">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/myfile.css">
+
+</head>
+<!---Content starts here -->
+<body>
+
+  <header>
+
+    <a id="menu_icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+</svg>
+</a>
+
+<div id="drawer">
+
+<nav>
+<a href="#unordered"> Unordered List </a>
+<a href="#ordered"> Ordered List</a>
+<a href="#color"> Color Codes</a>
+<a href="#video"> Video Tags</a>
+<a href="#table"> Table Tags</a>
+</nav>
+</div>
+
+  <h1>A terra enquanto materia</h1>
+  <p> intervenções artisticas </p>
+  <h4> design de interação </h4>
+  <hr>
+  </header>
+
+  <nav id="tabletPC" class="col-3">
+
+<a href="#unordered"> conteúdos</a>
+<a href="#ordered"> lista de imagens</a>
+<a href="#color"> Color Codes</a>
+</nav>
+
+<div id="container" class="col-9">
+  <section class="slideshow-container">
+  <h2>HTML Slideshow</h2>
+
+  <article class="mySlides" class="fade">
+  <figure>
+  <img src="Alberto Carneiro.jpg">
+  <figcaption>Figure 1: Running to learn HTML5!</figcaption>
+  </figure>
+
+  </article>
+  <article class="mySlides" class="fade">
+  <figure>
+  <img src="bicho.jpg">
+  <figcaption>Figure 2: Learning HTML5 is too easy...</figcaption>
+  </figure>
+  </article>
+
+  <article class="mySlides" class="fade">
+  <figure>
+  <img src="primeira forma.jpg">
+  <figcaption>Figure 3: Are you having difficulties with HTML5?</figcaption>
+  </figure>
+  </article>
+  <div class="dotpoints">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+
+  </div>
+  </section>
+<section>
+<a name="unordered">
+<h2> lista de conteúdos </h2>
+<i>artistas plásticos que utilizam a natureza como expressão plástica:</i>
+<ul>
+<li> text, </li>
+<li> images,</li>
+<li> sounds,</li>
+<li> frames </li>
+<li> animation on your browser pages.
+</li>
+</ul>
+</section>
+
+<section>
+<a name="ordered">
+<h2> lista de imagens </h2>
+<i> Autores </i>
+<ol>
+<li><u> Paulo Óscar </u></li>
+<li><u> Alberto Carneiro </u></li>
+<li><u> Andy Goldsworthy</u></li>
+</ol>
+</section>
+
+<section>
+<a name="color">
+<h2>imagens</h2>
+<p> Obras </p>
+
+<img src="primeira forma.jpg" width="400" height="auto">
+<img src="bicho.jpg" width="400" height="auto">
+<img src="Alberto Carneiro.jpg" width="400" height="auto">
+</section>
+
+<section>
+
+<iframe width="640" height="480"
+src="https://www.youtube.com/embed/_FR5WkeqIYk"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/BQYGbfVfpm0"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+
+</section>
+
+<section>
+<table border="1px">
+<th colspan="3"> Heading </th>
+<tr>
+<td> Imagem 1 </td> <td> Imagem 2 </td> <td> Imagem 3 </td>
+</tr>
+<tr>
+<td rowspan="4"> Cell Spanning in 3 Rows (2nd and 3rd
+merged)</td>
+<td rowspan="3"> Cell Spanning in 2 Rows (1st and 2nd Cell
+merged) </td>
+<td> 1st Cell </td>
+</tr>
+<tr>
+<td> 2nd Cell </td>
+</tr>
+<tr>
+<td> 3rd Cell </td>
+</tr>
+<tr>
+<td> 3rd Cell </td> <td> 4th Cell </td>
+</tr>
+<tr>
+<td> 3rd Cell </td>
+<td> 4rd Cell </td>
+</tr><section class="slideshow-container">
+<h2>HTML Slideshow</h2>
+<article class="mySlides" class="fade">
+<figure>
+<img src="Alberto Carneiro.jpg">
+<figcaption>Figure 1: Running to learn HTML5!</figcaption>
+</figure>
+</article>
+<article class="mySlides" class="fade">
+<figure>
+<img src="bicho.jpg">
+<figcaption>Figure 2: Learning HTML5 is too easy...</figcaption>
+</figure>
+</article>
+
+
+</section>
+</table>
+<a name="table">
+</section>
+
+</div>
+
+<aside class="col-2">
+<h3> Aside
+</h3>
+<p>Esta zona serve para colocar informacao menos relevante
+</p>
+
+</aside>
+
+<footer>
+<h2>Developed by Rui Jesus and Paulo Óscar</h2>
+</footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+let i = null;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+
+slideIndex++;
+if (slideIndex> slides.length) {slideIndex = 1}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+let menu_icon = document.querySelector('#menu_icon');
+let container = document.querySelector("#container");
+let drawer = document.querySelector('#drawer');
+
+menu_icon.addEventListener('click', function (e) {
+
+drawer.classList.toggle('open');
+e.stopPropagation();
+});
+
+container.addEventListener('click', function () {
+drawer.classList.remove('open');
+});
+
+</script>
+</body>
+<!---Content ends here -->
+</html>
